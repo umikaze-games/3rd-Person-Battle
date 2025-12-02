@@ -7,7 +7,5 @@ public abstract class PlayerBaseState : State
 	public PlayerBaseState(PlayerStateMachine stateMachine)
 	{ 
 		this.stateMachine=stateMachine;
-
-
 	}
 }
