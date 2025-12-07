@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 
 public class InputReader : MonoBehaviour, Controls.IPlayerActions
 {
-	public event Action jumpEvent;
-	public event Action dodgeEvent;
+	public event Action JumpEvent;
+	public event Action DodgeEvent;
 	private Controls controls;
 	private void Start()
 	{
@@ -20,11 +20,11 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 	}
 	public void OnJump(InputAction.CallbackContext context)
 	{
-		jumpEvent?.Invoke();
+		JumpEvent?.Invoke();
 	}
 
 	public void OnDodge(InputAction.CallbackContext context)
 	{
-		dodgeEvent?.Invoke();
+		DodgeEvent?.Invoke();
 	}
 }
