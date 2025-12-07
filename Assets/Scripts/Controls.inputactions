@@ -16,9 +16,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "New action",
+                    "name": "Dodge",
                     "type": "Button",
-                    "id": "5c1062aa-8c75-43b2-997a-87a414a6f936",
+                    "id": "a45bb741-61a4-4b29-adb3-c4995f3f6f66",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -50,12 +50,23 @@
                 },
                 {
                     "name": "",
-                    "id": "0d33727d-aedd-47ea-b274-b91b010a0607",
-                    "path": "",
+                    "id": "d3f2f62f-6a17-4592-9690-127274db319b",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "New action",
+                    "groups": ";Mouse & Keyboard",
+                    "action": "Dodge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28b022e3-bcff-4908-8b54-770f56584f1d",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Game Pad",
+                    "action": "Dodge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
