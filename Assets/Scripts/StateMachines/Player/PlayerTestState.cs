@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerTestState : PlayerBaseState
 {
 	private float timer;
-
 	public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
 	public override void Enter()
