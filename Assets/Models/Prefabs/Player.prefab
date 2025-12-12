@@ -1387,6 +1387,7 @@ GameObject:
   - component: {fileID: 2223381369993452320}
   - component: {fileID: 8840112389084527710}
   - component: {fileID: 6355465532492479898}
+  - component: {fileID: 3441211044872796415}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1439,6 +1440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStateMachine
   <InputReader>k__BackingField: {fileID: 2223381369993452320}
+  <Controller>k__BackingField: {fileID: 3441211044872796415}
+  <FreeLookMovementSpeed>k__BackingField: 0
 --- !u!95 &6355465532492479898
 Animator:
   serializedVersion: 7
@@ -1461,6 +1464,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!143 &3441211044872796415
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850539907563193243}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.8
+  m_Radius: 0.25
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.025
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!1 &4855493019337846436
 GameObject:
   m_ObjectHideFlags: 0
