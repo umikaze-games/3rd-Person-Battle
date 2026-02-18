@@ -6,21 +6,15 @@ public abstract class StateMachine : MonoBehaviour
 
 	private void Update()
 	{
-		if (currentState != null)
-		{
-			currentState.Tick(Time.deltaTime);
-		}
+		
+		currentState.Tick(Time.deltaTime);
 
 	}
 
 	public void SwitchState(State newState)
 	{
-		if (currentState != null)
-		{
-			currentState.Exit();
-			currentState = newState;
-			currentState.Enter();
-		}
-
+		currentState?.Exit();
+		currentState = newState;
+		currentState?.Enter();
 	}
 }

@@ -37,6 +37,6 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
 	public void OnLook(InputAction.CallbackContext context)
 	{
-		throw new NotImplementedException();
+		//throw new NotImplementedException();
 	}
 }
