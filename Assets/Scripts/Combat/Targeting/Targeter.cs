@@ -1,9 +1,11 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Targeter : MonoBehaviour
 {
+	[SerializeField] private CinemachineTargetGroup cineTargetGroup;
 	public List<Target> targets = new List<Target>();
 	public Target CurrentTarget { get; private set; }
 
@@ -12,13 +14,27 @@ public class Targeter : MonoBehaviour
 		if (!other.TryGetComponent<Target>(out Target target)) { return; }
 
 		targets.Add(target);
+		target.OnDestroyed += RemoveTarget;
+	}
+
+	private void RemoveTarget(Target target)
+	{
+		if (CurrentTarget == target)
+		{
+			cineTargetGroup.RemoveMember(CurrentTarget.transform);
+			CurrentTarget = null;
+		}
+
+		target.OnDestroyed -= RemoveTarget;
+		targets.Remove(target);
+
 	}
 
 	private void OnTriggerExit(Collider other)
 	{
 		if (!other.TryGetComponent<Target>(out Target target)) { return; }
 
-		targets.Remove(target);
+		RemoveTarget(target);
 	}
 	public bool SelectTarget()
 	{
@@ -31,7 +47,11 @@ public class Targeter : MonoBehaviour
 
 	public void Cancel()
 	{
-		CurrentTarget = null;
+		if (CurrentTarget == null) { return; }
+
+		cineTargetGroup.RemoveMember(CurrentTarget.transform);
+		//CurrentTarget = null;
+
 	}
 
 }

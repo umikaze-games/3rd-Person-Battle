@@ -600,6 +600,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229503144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4651995990553451980, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+  m_PrefabInstance: {fileID: 4223163209268818406}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eb80d8e62d9d145bb50fb783c0f731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineTargetGroup
 --- !u!1 &1594262494
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +765,46 @@ PrefabInstance:
       propertyPath: m_ControllerManager.Controllers.Array.data[2].Input.CancelDeltaTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.92358
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.25386
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.95433
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000010965264
+      objectReference: {fileID: 0}
+    - target: {fileID: 468412296869991394, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000053628852
+      objectReference: {fileID: 0}
+    - target: {fileID: 679649696736621038, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000021930528
+      objectReference: {fileID: 0}
+    - target: {fileID: 679649696736621038, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1761091e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 679649696736621038, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2207207476151640254, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: Priority.Enabled
       value: 1
@@ -876,15 +927,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497698852110122781, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.000004401457
+      value: -0.0000021930528
       objectReference: {fileID: 0}
     - target: {fileID: 4497698852110122781, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3604508e-14
+      value: -1.1761091e-14
       objectReference: {fileID: 0}
     - target: {fileID: 4497698852110122781, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.07
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4652376363554549266, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1010,6 +1061,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6624497367027387361, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: cineTargetGroup
+      value: 
+      objectReference: {fileID: 1229503144}
     - target: {fileID: 7145971458809516128, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: NaN
