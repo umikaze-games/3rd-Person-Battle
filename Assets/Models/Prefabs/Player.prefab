@@ -1049,13 +1049,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3405508501650066772}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2011562657048917124}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &3498122233788245741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1419,7 @@ GameObject:
   - component: {fileID: 8840112389084527710}
   - component: {fileID: 6355465532492479898}
   - component: {fileID: 3441211044872796415}
+  - component: {fileID: 5627785786386160828}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1477,6 +1478,8 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 0}
   <FreeLookMovementSpeed>k__BackingField: 0
   <RotationDamping>k__BackingField: 0
+  <Targeter>k__BackingField: {fileID: 2159024596111390433}
+  <ForceReceiver>k__BackingField: {fileID: 5627785786386160828}
 --- !u!95 &6355465532492479898
 Animator:
   serializedVersion: 7
@@ -1524,6 +1527,19 @@ CharacterController:
   m_SkinWidth: 0.025
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!114 &5627785786386160828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850539907563193243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8565e8de14c23c44d8303c813b69ca97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
+  controller: {fileID: 3441211044872796415}
 --- !u!1 &4855493019337846436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,6 +2550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90263dfa9c23b75458fd3599d1921b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Targeter
+  cineTargetGroup: {fileID: 0}
+  targets: []
 --- !u!135 &1172188832147520391
 SphereCollider:
   m_ObjectHideFlags: 0
