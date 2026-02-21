@@ -12,7 +12,9 @@ public class PlayerStateMachine : StateMachine
 	[field: SerializeField] public Targeter Targeter { get; private set; }
 	[field: SerializeField] public ForceReceiver ForceReceiver { get; private set; }
 	[field: SerializeField] public float TargetingMovementSpeed { get; private set; }
+	[field: SerializeField] public Attack[] Attacks { get; private set; }
 	public Transform MainCameraTransform { get; private set; }
+
 	private void Start()
 	{
 		MainCameraTransform = Camera.main.transform;

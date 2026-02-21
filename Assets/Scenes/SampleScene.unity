@@ -1034,12 +1034,28 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: <FreeLookMovementSpeed>k__BackingField
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: <TargetingMovementSpeed>k__BackingField
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[0].<AnimationName>k__BackingField
+      value: Attack1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[1].<AnimationName>k__BackingField
+      value: Attack2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[2].<AnimationName>k__BackingField
+      value: Attack3
       objectReference: {fileID: 0}
     - target: {fileID: 4497698852110122781, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: m_LocalPosition.x
