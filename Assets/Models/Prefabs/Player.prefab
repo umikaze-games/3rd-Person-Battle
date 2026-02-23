@@ -1480,6 +1480,26 @@ MonoBehaviour:
   <RotationDamping>k__BackingField: 0
   <Targeter>k__BackingField: {fileID: 2159024596111390433}
   <ForceReceiver>k__BackingField: {fileID: 5627785786386160828}
+  <TargetingMovementSpeed>k__BackingField: 0
+  <Attacks>k__BackingField:
+  - <AnimationName>k__BackingField: Attack1
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 1
+    <ComboAttackTime>k__BackingField: 0.6
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 15
+  - <AnimationName>k__BackingField: Attack2
+    <TransitionDuration>k__BackingField: 0.1
+    <ComboStateIndex>k__BackingField: 2
+    <ComboAttackTime>k__BackingField: 0.5
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 15
+  - <AnimationName>k__BackingField: Attack3
+    <TransitionDuration>k__BackingField: 0.2
+    <ComboStateIndex>k__BackingField: -1
+    <ComboAttackTime>k__BackingField: 0
+    <ForceTime>k__BackingField: 0.35
+    <Force>k__BackingField: 20
 --- !u!95 &6355465532492479898
 Animator:
   serializedVersion: 7
@@ -1540,6 +1560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
   controller: {fileID: 3441211044872796415}
+  drag: 5
 --- !u!1 &4855493019337846436
 GameObject:
   m_ObjectHideFlags: 0

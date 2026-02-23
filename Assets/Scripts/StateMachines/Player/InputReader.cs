@@ -9,8 +9,6 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 	public event Action TargetEvent;
 	public event Action CancelEvent;
 	private Controls controls;
-
-
 	public bool IsAttacking { get; private set; }
 	public Vector2 MovementValue { get; private set; }
 	private void Start()
