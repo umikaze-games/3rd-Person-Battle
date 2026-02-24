@@ -1088,6 +1088,61 @@ Transform:
   - {fileID: 2006767239820729411}
   m_Father: {fileID: 7057379156929633763}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3661796860070191478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3080694046772483452}
+  - component: {fileID: 2796088888597127289}
+  m_Layer: 0
+  m_Name: WeaponLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3080694046772483452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661796860070191478}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0051744506, y: 0.040877584, z: -0.112992704, w: 0.9927411}
+  m_LocalPosition: {x: -0.308, y: 0.16, z: 0.054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5621672366656194440}
+  m_LocalEulerAnglesHint: {x: 1.118, y: 4.589, z: -12.942}
+--- !u!136 &2796088888597127289
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661796860070191478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 1.25
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3724329929957671394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1475,7 @@ GameObject:
   - component: {fileID: 6355465532492479898}
   - component: {fileID: 3441211044872796415}
   - component: {fileID: 5627785786386160828}
+  - component: {fileID: 8483921501083321605}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1561,6 +1617,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
   controller: {fileID: 3441211044872796415}
   drag: 5
+--- !u!114 &8483921501083321605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850539907563193243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35a85bf419e2b642bdf3e99a9d18051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponHandler
 --- !u!1 &4855493019337846436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +1921,7 @@ Transform:
   - {fileID: 1846572038466134547}
   - {fileID: 486200080862419863}
   - {fileID: 9013528254874587137}
+  - {fileID: 3080694046772483452}
   m_Father: {fileID: 7903291295394812832}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6041773819053727102
