@@ -1098,6 +1098,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3080694046772483452}
   - component: {fileID: 2796088888597127289}
+  - component: {fileID: 1040143852427089918}
+  - component: {fileID: 5985824315308018098}
   m_Layer: 0
   m_Name: WeaponLogic
   m_TagString: Untagged
@@ -1143,6 +1145,46 @@ CapsuleCollider:
   m_Height: 1.25
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1040143852427089918
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661796860070191478}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5985824315308018098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661796860070191478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbdabdaeadd9ce04bb80ccf7374fc117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponDamage
+  myCollider: {fileID: 3441211044872796415}
 --- !u!1 &3724329929957671394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a35a85bf419e2b642bdf3e99a9d18051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHandler
+  weaponLogic: {fileID: 3661796860070191478}
 --- !u!1 &4855493019337846436
 GameObject:
   m_ObjectHideFlags: 0
