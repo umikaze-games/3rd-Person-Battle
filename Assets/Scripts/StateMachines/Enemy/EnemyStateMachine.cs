@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class EnemyStateMachine : StateMachine
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+	[field: SerializeField] public Animator Animator { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		SwitchState(new EnemyIdleState(this));
+	}
 }

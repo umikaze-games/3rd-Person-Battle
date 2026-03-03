@@ -614,6 +614,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1203460268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1515883141740754098, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+  m_PrefabInstance: {fileID: 4223163209268818406}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbdabdaeadd9ce04bb80ccf7374fc117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponDamage
 --- !u!114 &1229503144 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4651995990553451980, guid: 22256e64a81be8944af234956e471d3f, type: 3}
@@ -1047,6 +1058,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
+      propertyPath: <Weapon>k__BackingField
+      value: 
+      objectReference: {fileID: 1203460268}
     - target: {fileID: 4374956003427926366, guid: 22256e64a81be8944af234956e471d3f, type: 3}
       propertyPath: <Animator>k__BackingField
       value: 
