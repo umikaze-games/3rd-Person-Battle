@@ -1292,6 +1292,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4968736500699966851, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+      propertyPath: <Controller>k__BackingField
+      value: 
+      objectReference: {fileID: 6095681600772385238}
+    - target: {fileID: 4968736500699966851, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+      propertyPath: <ForceReceiver>k__BackingField
+      value: 
+      objectReference: {fileID: 6095681600772385237}
+    - target: {fileID: 4968736500699966851, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+      propertyPath: <PlayerChasingRange>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4995077164510464748, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1341,6 +1353,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+--- !u!114 &6095681600772385237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7082184930802950877, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+  m_PrefabInstance: {fileID: 6095681600772385236}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8565e8de14c23c44d8303c813b69ca97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
+--- !u!143 &6095681600772385238 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 934717883125471471, guid: 3ddc2e476b4c1004d9fe37a49887f4f2, type: 3}
+  m_PrefabInstance: {fileID: 6095681600772385236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
